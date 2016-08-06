@@ -27,7 +27,7 @@ New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\
 New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -TemplateParameterFile "medium-cluster.json"
 
 ## Manually configure the cluster size to 8 large nodes (S3 = large)
-New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -clusterSize 8 -nodeSize S3
+New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -clusterSize 8 -nodeSize "S3"
 
 ## Destroy the cluster
 Remove-AzureRmResourceGroup -Name "MyCluster"
