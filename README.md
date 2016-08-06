@@ -17,9 +17,7 @@ New-AzureRmResourceGroup -Name MyCluster -Location "North Europe"
 New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -TemplateParameterFile "small-cluster.json"
 ```
 
-4. You will notice the output of this operation will contain the Service Bus and Storage Account keys - these can be used to connect to the cluster.
-
-5. You can easily fine tune the process as follows:
+You will notice the output of this operation will contain the Service Bus and Storage Account keys - these can be used to connect to the cluster. You can also easily fine tune the process as follows:
 
 ```powershell
 ## Optional, if you have multiple subscriptions
