@@ -43,6 +43,7 @@ Remove-AzureRmResourceGroup -Name "MyCluster"
 * Fully supported by Microsoft going forwards
 * Easier management - a single MBrace Worker executable / package that is accessible over HTTP can function across
 all node sizes, unlike Cloud Services. Packages are simple zip files - no need to create cspackages.
+* Easier deployment - no need to manually copy / deploy the MBrace application - handled for us by ARM.
 
 ## Restrictions
 * Requires PowerShell currently. This could be removed using the .NET ARM SDK
