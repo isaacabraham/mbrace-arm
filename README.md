@@ -6,7 +6,7 @@ Experimental repository containing an ARM template for deploying MBrace clusters
 2. CD to this directory.
 3. Execute the following commands:
 
-```lang=powershell
+```powershell
 ## Logs into Azure using your credentials - no need for pub setting 
 Login-AzureRmAccount
 
