@@ -48,3 +48,4 @@ all node sizes, unlike Cloud Services. Packages are simple zip files - no need t
 * Requires PowerShell currently. This could be removed using the .NET ARM SDK
 * As this implementation of MBrace runs in a web job in the Azure App Service, it does not have admin privileges. Therefore, it cannot retrieve PerfMon
 counters for the purposes of metrics e.g. ``ShowWorkers()``.
+* Limited cluster and node sizes - maximum of 20 Extra Large nodes.
