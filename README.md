@@ -12,6 +12,9 @@ Login-AzureRmAccount
 
 ## Create a "resource group" for the cluster, called MyCluster
 New-AzureRmResourceGroup -Name MyCluster -Location "North Europe"
+
+## Create a 'small' MBrace cluster called MyCluster!
+New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -TemplateParameterFile "small-cluster.json"
 ```
 
 4. You will notice the output of this operation will contain the Service Bus and Storage Account keys - these can be used to connect to the cluster.
@@ -21,9 +24,6 @@ New-AzureRmResourceGroup -Name MyCluster -Location "North Europe"
 ```powershell
 ## Optional, if you have multiple subscriptions
 Set-AzureRmContext -SubscriptionName "My Subscription"
-
-## Create an 'small' MBrace cluster called MyCluster
-New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -TemplateParameterFile "small-cluster.json"
 
 ## Resize the cluster to a 'medium' sized cluster (2 nodes)
 New-AzureRmResourceGroupDeployment -ResourceGroupName MyCluster -TemplateFile .\azuredeploy.json -TemplateParameterFile "medium-cluster.json"
