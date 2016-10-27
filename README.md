@@ -1,6 +1,12 @@
 # mbrace-arm
 Experimental repository containing an ARM template for deploying MBrace clusters to Azure
 
+## Deploy a cluster from your web browser now
+
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/isaacabraham/mbrace-arm)
+
+To quickly deploy a cluster from your web browser, click the Deploy to Azure button above, which will then guide you through the process of deploying your MBrace cluster.
+
 ## How to use
 1. Open up a Powershell window.
 2. CD to this directory.
